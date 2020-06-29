@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VirtualKeyBoard</class>
+ <widget class="QWidget" name="VirtualKeyBoard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1174</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VirtualKeyBoard</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,8">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_showChinese" native="true">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,1,7,1">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="MyVirtualKeyboard_qLb" name="lb_display_text">
+          <property name="text">
+           <string>当前页面信息为键盘布局，仅供参考，实际文本在程序中设置，此处设置无效</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="MyVirtualKeyBoard_qBtn" name="btn0_left">
+          <property name="text">
+           <string>&lt;&lt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1,1,1,1,1,1,1">
+          <property name="spacing">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_02">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_03">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_04">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_05">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_06">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_07">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_08">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MyVirtualKeyBoard_qBtn" name="btn0_09">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="MyVirtualKeyBoard_qBtn" name="btn0_right">
+          <property name="text">
+           <string>&gt;&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_key" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_key_1" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,5,5,5,5,5,5,5,5,5,6">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_01">
+             <property name="text">
+              <string>q</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_02">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>w</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_03">
+             <property name="text">
+              <string>e</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_04">
+             <property name="text">
+              <string>r</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_05">
+             <property name="text">
+              <string>t</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_06">
+             <property name="text">
+              <string>y</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_07">
+             <property name="text">
+              <string>u</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_08">
+             <property name="text">
+              <string>i</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_09">
+             <property name="text">
+              <string>o</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_10">
+             <property name="text">
+              <string>p</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn1_backspace">
+             <property name="text">
+              <string>backspace</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_key_2" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,3,3,3,3,3,3,3,3,3,4">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_01">
+             <property name="text">
+              <string>a</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_02">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>s</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_03">
+             <property name="text">
+              <string>d</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_04">
+             <property name="text">
+              <string>f</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_05">
+             <property name="text">
+              <string>g</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_06">
+             <property name="text">
+              <string>h</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_07">
+             <property name="text">
+              <string>j</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_08">
+             <property name="text">
+              <string>k</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_09">
+             <property name="text">
+              <string>l</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn2_return">
+             <property name="text">
+              <string>return</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_key_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_Lshirt">
+             <property name="text">
+              <string>Lshirt</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_02">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>z</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_03">
+             <property name="text">
+              <string>x</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_04">
+             <property name="text">
+              <string>c</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_05">
+             <property name="text">
+              <string>v</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_06">
+             <property name="text">
+              <string>b</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_07">
+             <property name="text">
+              <string>n</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_08">
+             <property name="text">
+              <string>m</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_09">
+             <property name="text">
+              <string>,</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_10">
+             <property name="text">
+              <string>.</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn3_Rshirt">
+             <property name="text">
+              <string>Rshirt</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_key_4" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,2,13,2,2">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn4_symbol">
+             <property name="text">
+              <string>?123</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn4_switch">
+             <property name="text">
+              <string>switch</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn4_space">
+             <property name="text">
+              <string>space</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn4_01">
+             <property name="text">
+              <string>/</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="MyVirtualKeyBoard_qBtn" name="btn4_hide">
+             <property name="text">
+              <string>hide</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyVirtualKeyBoard_qBtn</class>
+   <extends>QPushButton</extends>
+   <header>myVirtualKeyboard_qBtn.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyVirtualKeyboard_qLb</class>
+   <extends>QLabel</extends>
+   <header>myVirtualKeyboard_qLb.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
