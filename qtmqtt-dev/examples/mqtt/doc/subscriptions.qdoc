@@ -1,0 +1,82 @@
+/****************************************************************************
+**
+** Copyright (C) 2018 The Qt Company Ltd.
+** Contact: https://www.qt.io/licensing/
+**
+** This file is part of the documentation of the Qt Toolkit.
+**
+** $QT_BEGIN_LICENSE:FDL$
+** Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and The Qt Company. For licensing terms
+** and conditions see https://www.qt.io/terms-conditions. For further
+** information use the contact form at https://www.qt.io/contact-us.
+**
+** GNU Free Documentation License Usage
+** Alternatively, this file may be used under the terms of the GNU Free
+** Documentation License version 1.3 as published by the Free Software
+** Foundation and appearing in the file included in the packaging of
+** this file. Please review the following information to ensure
+** the GNU Free Documentation License version 1.3 requirements
+** will be met: https://www.gnu.org/licenses/fdl-1.3.html.
+** $QT_END_LICENSE$
+**
+****************************************************************************/
+
+/*!
+    \example subscriptions
+    \title MQTT Subscriptions Example
+    \ingroup qtmqtt-examples
+    \brief Creating a application that communicates with an MQTT broker.
+
+    \image subscriptions.png
+
+    \e {MQTT Subscriptions} shows how to create an application that communicates
+    with an MQTT broker. A new dialog opens for each subscription, where you can
+    see the messages on the subscribed topics.
+
+    \section1 Creating a Client
+
+    We use the QMqttClient class to create an MQTT client and to set the broker
+    host name and port to use for the connection:
+
+    \quotefromfile subscriptions/mainwindow.cpp
+    \skipto m_client
+    \printuntil setPort
+
+    \section1 Subscribing to Topics
+
+    When users subscribe to topics in the client, a new subscription object is
+    created:
+
+    \skipto on_buttonSubscribe_clicked
+    \printuntil }
+    \printuntil }
+
+    We use the QMqttSubscription class to store the topic, state, and QoS level
+    of a subscription:
+
+    \quotefromfile subscriptions/subscriptionwindow.cpp
+    \skipto QMqttSubscription
+    \printuntil });
+    \printuntil }
+
+    The QoS level can be set separately for a message and for a subscription.
+    The QoS level set for a subscription determines the minimum QoS level. If
+    a message is sent with a higher QoS level, the broker increases the QoS of
+    that message to the higher level. For example, if client A subscribed to
+    \e topic with QoS 1, and client B publishes a message on the topic, with
+    QoS 0, the broker will automatically increase the QoS of the message to 1.
+    If client B publishes a message on the topic with the QoS 2, the broker
+    will send it with QoS 2.
+
+    \section2 Receiving Messages
+
+    When the client receives a message, the QMqttMessage class is used to store
+    the actual message payload:
+
+    \skipto updateMessage
+    \printuntil }
+*/
