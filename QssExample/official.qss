@@ -1,0 +1,200 @@
+﻿
+/*** 标签 ***/
+QLabel{
+    font: 14px;
+    color: rgba(0,0,0,0.6);
+}
+
+/* 通用的蓝色按钮 */
+QPushButton#Common_BtnBlue {
+    background: rgba(0,147,221,0.7);
+    color: white;
+    font-size: 12px;
+    border: none;
+}
+QPushButton:hover#Common_BtnBlue {
+    background: #0093DD;
+}
+QPushButton:pressed#Common_BtnBlue {
+    background: #0086C6;
+}
+
+/* 单行编辑框 */
+QLineEdit {
+    background: rgba(204,204,204,0.3);
+    color: #bbbbbb;
+    font-size: 15px;
+    padding-left: 2px;
+    border: none;
+}
+
+/* 勾选框 */
+QCheckBox {
+    border: none;
+}
+QCheckBox::indicator {
+    width: 24px;
+    height: 24px;
+}
+/* 未选中状态的勾选框 */
+QCheckBox::indicator:enabled:unchecked {
+    background:url(:/checkBox_unchecked.png) no-repeat center;
+}
+/* 选中状态的选择框 */
+QCheckBox::indicator:enabled:checked {
+    background:url(:/checkBox_checked.png) no-repeat center;
+}
+
+/* 水平滑动条整体 */
+QSlider::groove:horizontal {
+    border: 0px solid #bbb;
+    height: 28px; /* 先定滑动条完整高度为28px，这个值最先设置，后面的值都由这个值来定 */
+}
+/* 滑动过的槽 */
+QSlider::sub-page:horizontal {
+    background: rgb(90,49,255); /* 槽颜色 */
+    border-radius: 4px; /* 外环区域倒圆角度（槽实际高度8px的一半） */
+    margin-top: 10px; /* 上遮住区域高度，如果想设置槽实际高度为8px，则margin-top = (height - sub-page-height)/2 = (28 - 8)/2 = 10px*/
+    margin-bottom: 10px; /* 下遮住区域高度 */
+    /* width在这里无效，不写即可 */
+}
+/* 未滑动过的槽 */
+QSlider::add-page:horizontal {
+    background: rgb(255,255,255); /* 槽颜色 */
+    border: 0px solid #777; /* 外环大小0px就是不显示，默认也是0 */
+    border-radius: 4px; /* 外环区域倒圆角度 */
+    margin-top: 10px; /* 上遮住区域高度 */
+    margin-bottom: 10px; /* 下遮住区域高度 */
+}
+/* 滑块 */
+QSlider::handle:horizontal {
+    background: rgb(193,204,208); /* 滑块颜色 */
+    width: 20px; /* 滑块的宽度，只要保证 width + margin-top + margin-bottom = height即可 */
+    border-radius: 10px; /* 滑块外环倒圆角度，滑块的一半宽度 */
+    margin-top: 4px; /* 上遮住区域高度 */
+    margin-bottom: 4px; /* 下遮住区域高度 */
+}
+/* 鼠标触及滑块 */
+QSlider::handle:horizontal:hover {
+    background: rgb(193,204,208); /* 滑块颜色 */
+    width: 22px; /* 滑块的宽度 */
+    border-radius: 11px; /* 滑块外环倒圆角度 */
+    margin-top: 3px; /* 上遮住区域高度 */
+    margin-bottom: 3px; /* 下遮住区域高度 */
+}
+
+/* 垂直滚动条整体 */
+QScrollBar:vertical {
+    background: #FFFFFF;  /* 背景色 */
+    width: 8px; /* 设置滚动条的宽度 */
+    padding-top: 0px;  /* 上预留位置（放置向上箭头）*/
+    padding-bottom: 0px;  /* 下预留位置（放置向下箭头）*/
+    padding-left: 0px;  /* 左预留位置 */
+    padding-right: 0px;  /* 右预留位置 */
+    border-radius: 4px;
+    margin: 0px 0px 0px 0px;
+}
+/* 鼠标触及滚动条 */
+QScrollBar::vertical:hover{
+    background: #FFFFFF;
+}
+/* 滑块 */
+QScrollBar::handle:vertical {
+    background: #dbdbdb;  /* 滑块颜色 */
+    border-radius: 4px;  /* 边角圆润 */
+    min-height: 30px;  /* 滑块最小高度 */
+    margin-left: 0px; /* 滑块与滑轨左边的距离 */
+    margin-right: 0px; /* 滑块与滑轨右边的距离 */
+}
+/* 鼠标触及滑块 */
+QScrollBar::handle:vertical:hover{
+    background: #d0d0d0;
+}
+/* 向下箭头 */
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px; /* 隐藏 */
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+/* 向上箭头 */
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px; /* 隐藏 */
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+/* 当鼠标放到下箭头上的时候 */
+QScrollBar::add-line:vertical:hover{
+    height: 9px;
+    width: 8px;
+    /*border-image: url(:/images/downArrow.png);*/
+    subcontrol-position: bottom;
+}
+/* 当鼠标放到下箭头上的时候 */
+QScrollBar::sub-line:vertical:hover{
+    height: 9px;
+    width: 8px;
+    /*border-image: url(:/images/upArrow.png);*/
+    subcontrol-position: top;
+}
+/* 当滚动条滚动的时候，上面的部分和下面的部分 */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    border-radius: 4px;
+}
+
+/* 进度条 */
+QProgressBar{
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+QProgressBar::chunk
+{
+    background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #01FAFF,stop:1 #26B4FF);
+    border-radius: 8px;
+}
+
+/* 矩阵列表TableView-整体样式 */
+QTableView {
+    color: #bbbbbb;
+    font-size: 14px;
+    background: white;
+    border: none;
+}
+QTableView::item {
+    max-height: 30px;
+}
+QTableView::item:selected{
+    color: white;
+    background: rgba(0,147,221,0.5);
+    max-height: 30px;
+}
+
+/* 矩阵TableView-表头 */
+QHeaderView {
+    color: #bbbbbb;
+    font: 14px;
+    background-color: white;
+}
+QHeaderView::section {
+    color: #bbbbbb;
+    font-family: "Microsoft YaHei";
+    font: normal 14px;
+    background-color: transparent;
+    border: 5px solid transparent; /* 使用border作为内边距的一半，可以取消点击效果*/
+    padding-left: 10px;
+}
+
+/* QTableView 左上角样式 */
+QTableView QTableCornerButton::section {
+    color: white;
+    font-family: "Microsoft YaHei";
+    font: normal 14px;
+    background-color: transparent;
+    border: -7px solid transparent;
+    border-radius:0px;
+    padding:12px 0px 0px 20px;
+}
