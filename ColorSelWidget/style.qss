@@ -1,0 +1,138 @@
+/*QWidget
+{
+        border:none;
+        color:white;
+        font-family:微软雅黑;
+        font-size:14px;
+        outline:0px;
+        background:transparent;
+}*/
+
+#topWgt
+{
+        border-image:url(F:/data/images/mainui/bg.png) 4 4 4 4 stretch stretch;
+        border-width:4 4 4 4;
+}
+
+/*
+主体背景
+*/
+#mainWgt
+{
+        border-image:url(F:/data/images/mainui/main.png) 4 4 4 4 stretch stretch;
+        border-width:4 4 4 4;
+}
+QLabel {
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+QLabel#LabTitle {
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 15px;
+}
+QLabel#LabSplitLine {
+background: #8c1617;
+}
+
+QLineEdit
+{
+    background:#25272b;
+    border:1px solid #276d94;
+    padding-left:5px;
+    color: white;
+    font-size: 14px;
+}
+
+QGroupBox
+{
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    border: 2px solid #276d94;
+    margin-top: 10px;
+}
+QGroupBox::title
+{
+    left:10px;
+    bottom:10px;
+}
+
+/*1-按钮开始*/
+QPushButton
+{
+    background:#da4f47;
+    border-radius:3px;
+    padding-top:-2px;
+    color: white;
+    font-size: 14px;
+}
+QPushButton:hover
+{
+        background:#d4352d;
+}
+QPushButton:pressed
+{
+        background:#ab2922;
+}
+/*1-按钮结束*/
+
+QSpinBox
+{
+        color: white;
+        border:1px solid #276d94;
+        background-color:#25272b;
+        min-height: 26px;
+        min-width: 60px;
+}
+QSpinBox::up-arrow
+{
+        border-left:8px solid #25272b;
+        border-right:8px solid #25272b;
+        border-bottom:8px solid #276d94;
+        width:0px;
+        height: 0px;
+}
+QSpinBox::up-arrow:pressed
+{
+        border-bottom:9px solid #81c3d7;
+}
+QSpinBox::up-button
+{
+        margin-right:4px;
+        min-width: 16px;
+        min-height: 13px;
+        background-color:#25272b;
+}
+QSpinBox::down-arrow
+{
+        border-left:8px solid #25272b;
+        border-right:8px solid #25272b;
+        border-top:8px solid #276d94;
+        width:0px;
+        height: 0px;
+}
+QSpinBox::down-arrow:pressed
+{
+        border-top:9px solid #81c3d7;
+}
+QSpinBox::down-button
+{
+        margin-right:4px;
+        min-width:16px;
+        min-height:13px;
+        background-color:#25272b;
+}
+
+#m_pCloseBtn
+{
+        background:transparent;
+        border-image:url(://Image/btn_close_nor.png);
+}
+
+#m_pCloseBtn:hover
+{
+        border-image:url(://Image/btn_close_hov.png);
+}

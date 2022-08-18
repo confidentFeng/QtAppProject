@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.qss</file>
+        <file>Image/btn_close_hov.png</file>
+        <file>Image/btn_close_nor.png</file>
+        <file>Image/btn_close_pre.png</file>
+    </qresource>
+</RCC>
