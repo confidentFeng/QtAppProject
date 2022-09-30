@@ -1,0 +1,122 @@
+QWidget#MainWidget {
+    background: rgba(20,45,86,0.5);
+    border: 2px solid rgba(34,77,155,0.5);
+}
+
+/* 通用的蓝色按钮 */
+QPushButton#Common_BtnBlue {
+    background: #0093DD;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton:hover#Common_BtnBlue {
+    background: #00A0E9;
+}
+QPushButton:pressed#Common_BtnBlue {
+    background: #0088CA;
+}
+QPushButton:disabled#Common_BtnBlue {
+    background: #999999;
+}
+
+/* MyTableView-整体样式 */
+QTableView#MainWidget_myTableView {
+    color: white;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+QTableView::item#MainWidget_myTableView {
+    font-size: 14px;
+    max-height: 30px;
+    padding-right: 0px;
+    padding-left: 6px;
+}
+QTableView::item:selected#MainWidget_myTableView{
+    color: white;
+    background: rgba(0,147,221,0.5);
+    max-height: 30px;
+}
+/*** 勾选框 ***/
+QTableView::indicator#MainWidget_myTableView {
+    width: 20px;
+    height: 20px;
+    padding-left: -1px;
+}
+QTableView::indicator:enabled:unchecked#MainWidget_myTableView {
+    image: url(:/Image/checkBox_user_unchecked.png);
+}
+QTableView::indicator:enabled:unchecked:hover#MainWidget_myTableView {
+    image: url(:/Image/checkBox_user_unchecked.png);
+}
+QTableView::indicator:enabled:unchecked:pressed#MainWidget_myTableView {
+    image: url(:/Image/checkBox_user_checked.png);
+}
+QTableView::indicator:enabled:checked#MainWidget_myTableView {
+    image: url(:/Image/checkBox_user_checked.png);
+}
+QTableView::indicator:enabled:checked:hover#MainWidget_myTableView {
+    image: url(:/Image/checkBox_user_checked.png);
+}
+QTableView::indicator:disabled:checked#MainWidget_myTableView {
+    image: url(:/Image/checkBox_user_nochecked.png);
+}
+
+/* 设置垂直滚动条样式*/
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    background: rgba(204,204,204,0.3);
+    min-height: 20px;
+    border-radius: 3px;
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background:rgba(153,153,153,0.3);
+}
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+/* 设置右键菜单样式*/
+QMenu{
+    background: white;
+    border-radius: 8px;
+}
+QMenu::item{
+    background-color: transparent;
+    padding: 8px 32px 8px 24px; /*设置菜单项文字上下和左右的内边距，效果就是菜单中的条目左右上下有了间隔*/
+    color: #181818;
+    font-size: 14px;
+}
+QMenu::item:hover{
+    background-color: #eeeeee;
+}
+QMenu::item:selected{
+    background-color: #ebebeb;
+}
+QMenu::item:disabled {
+    color: #8d8d8d;
+}

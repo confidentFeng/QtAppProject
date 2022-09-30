@@ -181,22 +181,22 @@ ColorSelWidget::ColorSelWidget(QWidget *parent) : QWidget(parent)
     pLayoutCenter->addStretch();
     pLayoutCenter->setMargin(0);
 
-    // 主布局
-    QHBoxLayout *pLayoutMain2 = new QHBoxLayout;
-    pLayoutMain2->addSpacing(0);
-    pLayoutMain2->addLayout(pLayoutLeft);
-    pLayoutMain2->addSpacing(12);
-    pLayoutMain2->addLayout(pLayoutCenter);
-    pLayoutMain2->addSpacing(0);
+    // 布局
+    QHBoxLayout *pLayoutMainR = new QHBoxLayout;
+    pLayoutMainR->addSpacing(0);
+    pLayoutMainR->addLayout(pLayoutLeft);
+    pLayoutMainR->addSpacing(12);
+    pLayoutMainR->addLayout(pLayoutCenter);
+    pLayoutMainR->addSpacing(0);
     pLayoutCenter->setSpacing(0);
-    pLayoutMain2->setContentsMargins(12, 0, 12, 12);
+    pLayoutMainR->setContentsMargins(12, 0, 12, 12);
 
     // 主布局
     QVBoxLayout *pLayoutMain = new QVBoxLayout(this);
     pLayoutMain->addSpacing(0);
     pLayoutMain->addLayout(pLayoutTitle);
     pLayoutMain->addWidget(m_pLabSplitLine);
-    pLayoutMain->addLayout(pLayoutMain2);
+    pLayoutMain->addLayout(pLayoutMainR);
     pLayoutMain->addStretch();
     pLayoutMain->setMargin(0);
 

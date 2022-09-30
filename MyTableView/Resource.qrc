@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.qss</file>
+        <file>Image/checkBox_user_checked.png</file>
+        <file>Image/checkBox_user_nochecked.png</file>
+        <file>Image/checkBox_user_unchecked.png</file>
+        <file>Image/icon_camera_checked.png</file>
+    </qresource>
+</RCC>
