@@ -1,0 +1,62 @@
+/*************************** 选项卡界面 ***************************/
+/*** 基本的设置 ***/
+QTabBar::tab{
+    font-size: 14px;
+    min-width: 80;
+    min-height: 30;
+    max-width: 145;
+    max-height: 30;
+    padding-left: 6px;
+}
+/*** 设置 pane的样式 ***/
+QTabWidget::pane{
+    background: rgba(14,73,122,0.4);
+    border:none; /*去除widget边框 如果不去除，视觉上TabBar的背景颜色会进入到窗口里，不好看*/
+}
+/*** 标签未选中时显示 ***/
+QTabBar::tab:!selected {
+    background: rgba(20,45,86,0.5);
+    color: rgba(255,255,255,0.5);
+}
+/*** 标签被覆盖 ***/
+QTabBar::tab:hover {
+    background: rgba(14,73,122,0.4);
+    color: rgba(255,255,255,0.7);
+}
+QTabBar::tab:hover {
+    background: rgba(14,73,122,0.5);
+    color: rgba(255,255,255,0.9);
+}
+/*** 标签被选中 ***/
+QTabBar::tab:selected {
+    background: rgba(0,147,221,0.7);
+    color: rgba(255,255,255,1.0);
+}
+/*** 左箭头 ***/
+QTabBar QToolButton::left-arrow
+{
+    background: transparent;
+    height: 0px;
+}
+/*** 右箭头 ***/
+QTabBar QToolButton::right-arrow
+{
+    background: transparent;
+}
+/*** 选项卡的滚动条 ***/
+QTabBar::scroller {
+    background: transparent;
+    width: 0px; /* 隐藏了滚动条，就可以隐藏标签页左右按钮 */
+    height: 0px;
+}
+/*** 选项卡标签的关闭按钮 ***/
+QTabBar::close-button {
+    border-image: url(:/Image/btn_tabClose_nor.png);
+    subcontrol-position: right;
+}
+QTabBar::close-button:hover {
+    border-image: url(:/Image/btn_tabClose_hov.png);
+}
+QTabBar::close-button:pressed {
+    border-image: url(:/Image/btn_tabClose_pre.png);
+}
