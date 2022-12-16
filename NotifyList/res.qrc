@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>message.png</file>
+        <file>style.qss</file>
+        <file>btn_delete_hov.png</file>
+        <file>btn_delete_nor.png</file>
+        <file>btn_delete_pre.png</file>
+    </qresource>
+</RCC>

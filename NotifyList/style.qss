@@ -1,0 +1,73 @@
+QWidget#NotifyWidget {
+    background: white;
+    border: solid 1px gray;
+    border-radius: 4px;
+}
+QLabel#NotifyWidget_LabTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+}
+QLabel#NotifyWidget_LabBody {
+    font-size: 12px;
+    color: #444444;
+}
+QLabel#NotifyCountWidget_LabIcon {
+    border-image: url(":/message.png");
+}
+QLabel#NotifyCountWidget_LabCount {
+    font: 20px Verdana;
+    color: #dd424d;
+}
+QPushButton#NotifyWidget_BtnClose {
+    border-image: url(":/btn_delete_hov.png");
+}
+QPushButton:hover#NotifyWidget_BtnClose {
+    border-image: url(":/btn_delete_hov.png");
+}
+QPushButton:pressed#NotifyWidget_BtnClose {
+    border-image: url(":/btn_delete_pre.png");
+}
+
+/* 设置滚动区域基本样式*/
+QScrollArea {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+/* 设置垂直滚动条基本样式*/
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    background: rgba(204,204,204,0.3);
+    min-height: 20px;
+    border-radius: 3px;
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background:rgba(153,153,153,0.3);
+}
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    width: 0px;
+    height: 0px;
+}
