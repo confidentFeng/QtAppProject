@@ -1,0 +1,191 @@
+/*************************** 全局 ***************************/
+*{
+    outline: 0px;
+}
+/* 所有弹框样式一致 */
+QWidget#CommonWidget {
+    background: rgba(20,45,86,0.5);
+    border: 2px solid rgba(34,77,155,0.5);
+}
+/* 通用的透明窗口 */
+QWidget#CommonTranWidget {
+    background: transparent;
+}
+/* 所有编辑框样式一致 */
+QLineEdit#Common_LineEidt {
+    background: rgba(0,147,221,0.3);
+    color: #F5F5F5;
+    font-size: 13px;
+    padding-left: 2px;
+    border: none;
+}
+/* 通用的14px文本 */
+QLabel#Common_14pxText {
+    color: white;
+    font-size: 14px;
+}
+/* 通用的13px文本 */
+QLabel#Common_13pxText {
+    color: white;
+    font-size: 13px;
+}
+/* 通用的12px文本 */
+QLabel#Common_12pxText {
+    color: white;
+    font-size: 12px;
+}
+/* 通用的蓝色按钮 */
+QPushButton#Common_BtnBlue {
+    background: #0093DD;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton:hover#Common_BtnBlue {
+    background: #00A0E9;
+}
+QPushButton:pressed#Common_BtnBlue {
+    background: #0088CA;
+}
+QPushButton:disabled#Common_BtnBlue {
+    background: #999999;
+}
+/* 通用的红色按钮 */
+QPushButton#Common_BtnRed {
+    background: #FF3C33;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton:hover#Common_BtnRed {
+    background: #FF5E4D;
+}
+QPushButton:pressed#Common_BtnRed {
+    background: #E62222;
+}
+/* 通用的白色按钮 */
+QPushButton#Common_BtnWhite {
+    background: #fff;
+    color: #666666;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton:hover#Common_BtnWhite {
+    background: #F6F6F6;
+}
+QPushButton:pressed#Common_BtnWhite {
+    background: #EEEEEE;
+}
+/* 通用的白色背景、红色边框文本按钮 */
+QPushButton#Common_BtnWhiteRed {
+    background: white;
+    color: #FF3C33;
+    font-size: 13px;
+    border: 2px solid #FF3C33;
+    border-radius: 4px;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton:hover#Common_BtnWhiteRed {
+    background: rgba(255,60,51,0.1);
+    border: 1px solid #FF3C33;
+}
+QPushButton:pressed#Common_BtnWhiteRed {
+    background: rgba(255,60,51,0.2);
+    border: 1px solid #FF3C33;
+}
+/* 通用的纯文本按钮 */
+QPushButton#Common_BtnText {
+    background: #fff;
+    color: #666666;
+    font-size: 13px;
+    border: none;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton:hover#Common_BtnText {
+    background: #F6F8FB;
+    color: #000;
+}
+QPushButton:pressed#Common_BtnText {
+    background: #EEF1F9;
+    color: #000;
+}
+/* 全局tooltip样式，由于ARM下显示异常 */
+QToolTip{
+    border: 1px solid #1d6ea4;
+    background-color: #1d6ea4;
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+/*************************** 悬浮菜单界面 ***************************/
+QWidget#Widget1 {
+    background: red;
+}
+QWidget#Widget2 {
+    background: blue;
+}
+QPushButton#HoverMenu_BtnOpt1 {
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+QPushButton#HoverMenu_BtnOpt4 {
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+QPushButton:disabled#HoverMenu_BtnOpt4 {
+    background: transparent;
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0px; /* 取消按压后文字下沉效果 */
+}
+QPushButton#HoverMenu_BtnOpt2,#HoverMenu_BtnOpt3 {
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    border-style: none;
+}
+QPushButton:hover#HoverMenu_BtnOpt1,:hover#HoverMenu_BtnOpt2,
+:hover#HoverMenu_BtnOpt3,:hover#HoverMenu_BtnOpt4 {
+    color: rgba(0,147,221,0.8);
+}
+QPushButton:checked#HoverMenu_BtnOpt1,:checked#HoverMenu_BtnOpt2,
+:checked#HoverMenu_BtnOpt3,:checked#HoverMenu_BtnOpt4 {
+    color: white;
+    background: rgba(0,147,221,0.8);
+}
+
+/*************************** 自定义标题栏 ***************************/
+QWidget#HoverMenu {
+    background: rgba(20,45,86,0.5);
+}
+QWidget#MyTitleBar {
+    background: rgba(0,147,221, 0.3);
+}
+QLabel#MyTitleBar_LabTitle {
+    color: white;
+    font-size: 16px;
+}
+/* 关闭按钮 */
+QPushButton#MyTitleBar_BtnClose {
+    border-image: url(:/Image/Util/btn_close_nor.png);
+}
+QPushButton:hover#MyTitleBar_BtnClose {
+    border-image: url(:/Image/Util/btn_close_hov.png);
+}
+QPushButton:pressed#MyTitleBar_BtnClose {
+    border-image: url(:/Image/Util/btn_close_pre.png);
+}

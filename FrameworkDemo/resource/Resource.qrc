@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/style.qss</file>
+        <file>Image/HoverMenu/btn_bigScreen_hov.png</file>
+        <file>Image/HoverMenu/btn_bigScreen_nor.png</file>
+        <file>Image/HoverMenu/btn_bigScreen_pre.png</file>
+        <file>Image/HoverMenu/btn_close_hov.png</file>
+        <file>Image/HoverMenu/btn_close_nor.png</file>
+        <file>Image/HoverMenu/btn_close_pre.png</file>
+        <file>Translate/Translate_EN.qm</file>
+        <file>Image/Util/btn_close_hov.png</file>
+        <file>Image/Util/btn_close_nor.png</file>
+        <file>Image/Util/btn_close_pre.png</file>
+        <file>Image/Util/icon_cursorHand.png</file>
+        <file>Image/Util/icon_Hand.png</file>
+        <file>Image/Util/icon_mouse.png</file>
+        <file>Image/Util/icon_openhand.png</file>
+        <file>Image/Util/icon_sizeBDiagCursor.png</file>
+        <file>Image/Util/icon_sizeFDiagCursor.png</file>
+    </qresource>
+</RCC>
