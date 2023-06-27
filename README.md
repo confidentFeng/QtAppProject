@@ -52,6 +52,14 @@ Qt QSS 样式表示例
 
 
 
+## Manager
+
+使用 sql 和 xml 实现的汽车销售管理系统
+
+![Qt_Manager.png](https://s2.loli.net/2023/06/27/IrkvSdxMf9zb1RA.png)
+
+
+
 ## MyTableView
 
 QTableView 示例
