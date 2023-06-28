@@ -1,0 +1,58 @@
+*{font-family:Microsoft YaHei;}
+
+QLabel#MessageContent
+{
+	font-size:14px;
+}
+
+QPushButton#okButton
+{
+	border-radius:3px;
+	background-color:rgb(244 , 244 , 244);
+	border: 1px solid rgb(160 , 150 , 152);
+}
+
+QPushButton#okButton:hover
+{
+	background-color:rgb(190 , 231 , 253);
+	border: 1px solid rgb(79 , 173 , 216);
+}
+
+QPushButton#okButton:pressed
+{
+	background-color:rgb(235 , 236 , 237);
+	border: 1px solid rgb(79 , 173 , 216);
+	padding-left:2px;
+	padding-top:2px;
+}
+
+QPushButton#cancelButton
+{
+	border-radius:3px;
+	background-color:rgb(244 , 244 , 244);
+	border: 1px solid rgb(160 , 150 , 152);
+}
+
+QPushButton#cancelButton:hover
+{
+	background-color:rgb(190 , 231 , 253);
+	border: 1px solid rgb(79 , 173 , 216);
+}
+
+QPushButton#cancelButton:pressed
+{
+	background-color:rgb(235 , 236 , 237);
+	border: 1px solid rgb(79 , 173 , 216);
+	padding-left:2px;
+	padding-top:2px;
+}
+
+QLineEdit#inputContent
+{
+	border: 1px solid rgb(195 , 195 , 195);
+}
+
+QLineEdit#inputContent:hover
+{
+	border: 1px solid rgb(1 , 186 , 255 );
+}
