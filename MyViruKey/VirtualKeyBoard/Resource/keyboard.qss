@@ -1,0 +1,238 @@
+/*
+font: 24pt "微软雅黑";
+font: 75 24pt "微软雅黑";//加粗
+*/
+
+/*
+
+*/
+QWidget#VirtualKeyBoard
+{
+    border:0px solid rgb(255,0,0);
+/*    background:rgba(120,120,120,100%);*/
+    background:rgba(0,0,0,0%);/*设置背景透明(要求父类不为空，不然表现为黑块)*/
+}
+
+/*
+键盘输入区域
+*/
+QWidget#widget_key
+{
+    border:0px;
+/*    background:blue;*/
+/*    border-image: url(:/image/background/tree_book.jpg);  有些arm无法正常显示jpg图片*/
+/*    border-image: url(:/image/background/sky_2.jpg);*/
+/*    border-image: url(:/image/background/sky_like.jpg);*/
+/*    border-image: url(:/image/background/dream.jpg);*/
+      border-image: url(:/image/background/dark_night.png);
+}
+
+QPushButton
+{
+/*    qproperty-minimumSize: 50px 50px;*/
+/*    qproperty-maximumSize: 50px 50px;*/
+    border-style:outset;
+    font: 18pt "微软雅黑";/*切换为汉字字符时占用空间会扩大*/
+    border:1px solid rgba(0,0,0,0%);
+    border-radius:10px;
+    color:rgba(210,210,210,100%);
+    background-color:rgba(0,0,0,30%);
+}
+QPushButton:pressed
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+QPushButton[text=""]
+{
+border:0px;
+color:rgba(0,0,0,0%);
+background-color:rgba(0,0,0,0%);
+}
+QPushButton[text=""]:pressed
+{
+}
+
+/*显示中文时输入的英文*/
+QLabel#lb_display_text
+{
+    font: 24pt "微软雅黑";
+    border: 0px solid rgb(255,0,0);
+ /*   border-radius: 5px;*/
+    background:rgba(60,60,60,100%);
+    color:rgb(210,210,210);
+}
+
+QLabel#lb_display_text[text=""]
+{
+    background:rgba(0,0,0,0%);
+}
+
+/**********************第一行按钮*********************/
+/*
+专用来显示待选中文
+*/
+QWidget#widget_showChinese
+{
+    border:0px;
+    background:rgb(230,230,230);
+/*        qproperty-minimumSize: 9999px 50px;*/
+        qproperty-maximumSize: 9999px 50px;
+}
+
+/*
+左切换待选汉字----------字符为空，则隐藏
+*/
+QPushButton#btn0_left
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_02
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_03
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_04
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_05
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_06
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_07
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_08
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+QPushButton#btn0_09
+{
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+
+/*
+右边切换待选汉字
+*/
+QPushButton#btn0_right
+{
+/*    color:rgba(0,0,0,100%);*/
+    background-color:rgba(0,0,0,0%);
+    color:black;
+}
+
+
+
+QPushButton#btn0_left:pressed
+{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+QPushButton#btn0_right:pressed
+{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+/**********************第二行按钮*********************/
+/*
+退格按钮
+*/
+QPushButton#btn1_backspace
+{
+    color:rgba(0,0,0,0%);
+    image:url(:/image/ICON/backspace-RGB60.png);
+/*    padding:10px;*/
+}
+/***
+*******************第三行按钮*********************/
+/*
+回车按钮
+*/
+QPushButton#btn2_return[text="ok"]
+{
+    color:rgba(0,0,0,0%);
+    image:url(:/image/ICON/return-RGB60.png);
+}
+
+/**********************第四行按钮*********************/
+/*
+左SHIFT按钮
+*/
+QPushButton#btn3_Lshirt
+{
+    color:rgba(0,0,0,0%);
+    image:url(:/image/ICON/shift-RGB60.png);
+}
+QPushButton#btn3_Lshirt[text="Le"]
+{
+    color:rgba(0,0,0,0%);
+    image:url(:/image/ICON/left-RGB60.png);
+}
+/*
+右SHIFT按钮
+*/
+QPushButton#btn3_Rshirt
+{
+    color:rgba(0,0,0,0%);
+    image:url(:/image/ICON/shift-RGB60.png);
+}
+QPushButton#btn3_Rshirt[text="Ri"]
+{
+    color:rgba(0,0,0,0%);
+    image:url(:/image/ICON/right-RGB60.png);
+}
+
+/**********************第五行按钮*********************/
+/*
+切换输入法按钮
+*/
+
+QPushButton#btn4_symbol[text="ABC"]
+{
+    image: url(:/image/ICON/back-RGB60.png);
+    /*qproperty-iconSize:5px 5px;*/
+    padding-top:10px;
+    padding-bottom:10px;
+    color:rgba(0,0,0,0%);
+    background-color:rgba(0,0,0,0%);
+}
+
+QPushButton#btn4_switch
+{
+    /*qproperty-iconSize:5px 5px;*/
+    color:rgba(0,0,0,0%);
+/*    padding-top:10px;
+    padding-bottom:10px;*/
+    image: url(:/image/ICON/Earth-RGB60.png);
+}
+
+/*
+隐藏键盘按钮
+*/
+QPushButton#btn4_hide
+{
+    color:rgba(0,0,0,0%);
+    image: url(:/image/ICON/triangle-outline-RGB60.png);
+}
+
+
+

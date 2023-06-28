@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>ICON/back-RGB60.png</file>
+        <file>ICON/Earth-RGB60.png</file>
+        <file>ICON/keyboard-hide-RGB60.png</file>
+        <file>ICON/left-RGB60.png</file>
+        <file>ICON/right-RGB60.png</file>
+        <file>ICON/shift-RGB60.png</file>
+        <file>ICON/triangle-outline-RGB60.png</file>
+        <file>ICON/return-RGB60.png</file>
+        <file>ICON/backspace-RGB60.png</file>
+        <file>background/dream.jpg</file>
+        <file>background/sky_2.jpg</file>
+        <file>background/sky_like.jpg</file>
+        <file>background/tree_book.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>keyboard.qss</file>
+    </qresource>
+</RCC>
