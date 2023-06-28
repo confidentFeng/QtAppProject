@@ -68,6 +68,16 @@ QTabWidget 示例
 
 
 
+## MyViruKey
+
+虚拟键盘
+
+![Qt_MyVirKeyboard_A.png](https://s2.loli.net/2023/06/28/83ZAu1lyLMUYxoC.png)
+
+<br />
+
+
+
 ## MpvDemo & MpvDemoModify
 
 Qt 使用开源 mpv 库来实现播放视频流、暂停、录制等功能。
