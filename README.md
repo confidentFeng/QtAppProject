@@ -58,6 +58,28 @@ QTabWidget 示例
 
 
 
+## MyMessageBoxDemo
+
+自定义消息框
+
+![Qt_MessageBox_A.png](https://s2.loli.net/2023/06/28/8qZvb9PtlL6ojxa.png)
+
+<br />
+
+
+
+## MpvDemo & MpvDemoModify
+
+Qt 使用开源 mpv 库来实现播放视频流、暂停、录制等功能。
+
+- 介绍博客：[Qt 使用 MPV 开源播放器](https://www.cnblogs.com/linuxAndMcu/p/12101330.html)
+
+![img](https://i.loli.net/2019/12/26/VMB45vPcY6i2GeD.png)
+
+<br />
+
+
+
 ## NotifyList & qt-notify2-master
 
 Qt 实现右下角消息通知队列（滚动版本），最多同时显示 5 个通知。
