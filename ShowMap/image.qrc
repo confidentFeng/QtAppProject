@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>image/add.png</file>
+        <file>image/add1.png</file>
+        <file>image/cancel.png</file>
+        <file>image/cancel1.png</file>
+        <file>image/less.png</file>
+        <file>image/less1.png</file>
+        <file>image/map.pgm</file>
+        <file>image/map.png</file>
+        <file>image/ok.png</file>
+        <file>image/ok1.png</file>
+        <file>image/point.png</file>
+        <file>image/reset.png</file>
+        <file>image/reset1.png</file>
+        <file>image/aout.png</file>
+        <file>image/aout1.png</file>
+        <file>image/manual.png</file>
+        <file>image/manual1.png</file>
+        <file>image/group.png</file>
+        <file>image/group4.png</file>
+        <file>image/return.png</file>
+    </qresource>
+</RCC>

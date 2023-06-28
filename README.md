@@ -154,7 +154,21 @@ Qt 国际化翻译
 
 
 
+## ShowMap
+
+显示地图示例
+
+![Qt_ShowMap.png](https://s2.loli.net/2023/06/28/AoatsrkgTH8SUKq.png)
+
+<br />
 
 
 
+## Rocker
+
+自定义摇杆示例
+
+![Qt_Rock.png](https://s2.loli.net/2023/06/28/XbQUsGnyCNWLBIY.png)
+
+<br />
 
