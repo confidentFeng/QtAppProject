@@ -24,7 +24,7 @@
 
 - 介绍博客：[【Qt 应用】模仿实现Win10的Wifi列表](https://www.cnblogs.com/linuxAndMcu/p/17543268.html)
 
-![QtApp_wifiList.gif](https://s2.loli.net/2023/07/11/qetIzobcuwRAyd8.gif)
+![QtApp_wifiList.gif](./Screenshot/QtApp_wifiList.gif)
 
 
 
