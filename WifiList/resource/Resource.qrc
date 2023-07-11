@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/style.qss</file>
+        <file>Image/Util/btn_close_hov.png</file>
+        <file>Image/Util/btn_close_nor.png</file>
+        <file>Image/Util/btn_close_pre.png</file>
+        <file>Image/Util/icon_cursorHand.png</file>
+        <file>Image/Util/icon_Hand.png</file>
+        <file>Image/Util/icon_mouse.png</file>
+        <file>Image/Util/icon_openhand.png</file>
+        <file>Image/Util/icon_sizeBDiagCursor.png</file>
+        <file>Image/Util/icon_sizeFDiagCursor.png</file>
+        <file>Image/Util/btn_maximize_hov.png</file>
+        <file>Image/Util/btn_maximize_nor.png</file>
+        <file>Image/Util/btn_maximize_pre.png</file>
+        <file>Image/Util/btn_minimize_hov.png</file>
+        <file>Image/Util/btn_minimize_nor.png</file>
+        <file>Image/Util/btn_minimize_pre.png</file>
+        <file>Image/Wifi/icon_wifi.png</file>
+        <file>Image/Wifi/checkbox_checked_nor.png</file>
+        <file>Image/Wifi/checkbox_unchecked_hov.png</file>
+        <file>Image/Wifi/checkbox_unchecked_nor.png</file>
+        <file>Image/Wifi/checkbox_unchecked_pre.png</file>
+        <file>Image/Wifi/checkbox_checked_hov.png</file>
+        <file>Image/Wifi/checkbox_checked_pre.png</file>
+        <file>Image/Widget/loading1.png</file>
+        <file>Image/Widget/loading2.png</file>
+        <file>Image/Widget/loading3.png</file>
+        <file>Image/Widget/loading4.png</file>
+        <file>Image/Widget/loading5.png</file>
+        <file>Image/Widget/loading6.png</file>
+        <file>Image/Widget/loading7.png</file>
+        <file>Image/Widget/loading8.png</file>
+        <file>Image/Control/btn_eye_hov.png</file>
+        <file>Image/Control/btn_eye_nor.png</file>
+        <file>Image/Control/btn_eye_pre.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,127 @@
+/*************************** 全局 ***************************/
+*{
+    outline: 0px;
+}
+/* 所有弹框样式一致 */
+QWidget#CommonWidget {
+    background: rgba(20,45,86,0.5);
+    border: 2px solid rgba(34,77,155,0.5);
+}
+/* 通用的透明窗口 */
+QWidget#CommonTranWidget {
+    background: transparent;
+}
+
+
+/************ Wifi列表项 ************/
+QLabel#WifiListItem_LabName {
+    color: white;
+    font-size: 14px;
+}
+/* QListWidget列表 */
+QListWidget#WifiList_ListWidget {
+    background-color: transparent;
+    border: none;
+    outline: 0px;
+}
+QListWidget::item#WifiList_ListWidget {
+    background: #3c3c3c;
+}
+QListWidget::item:hover#WifiList_ListWidget {
+    background: #4e4e4e;
+}
+QListWidget::item::selected#WifiList_ListWidget {
+    background: #af782c;
+}
+/* 勾选框 */
+QCheckBox#WifiListItem_CheckBox {
+    spacing: 5px;
+    color: white;
+    font-size: 14px;
+}
+QCheckBox::indicator#WifiListItem_CheckBox {
+    width: 28px;
+    height: 28px;
+}
+/* 未选中状态 */
+QCheckBox::indicator:unchecked#WifiListItem_CheckBox {
+    background: url(:/Image/Wifi/checkbox_unchecked_nor.png) no-repeat center;
+}
+/* 未选中状态且悬浮 */
+QCheckBox::indicator:unchecked:hover#WifiListItem_CheckBox {
+    background: url(:/Image/Wifi/checkbox_unchecked_hov.png) no-repeat center;
+}
+/* 未选中状态且按下 */
+QCheckBox::indicator:unchecked:pressed#WifiListItem_CheckBox {
+    background: url(:/Image/Wifi/checkbox_unchecked_pre.png) no-repeat center;
+}
+/* 选中状态 */
+QCheckBox::indicator:checked#WifiListItem_CheckBox {
+    background: url(:/Image/Wifi/checkbox_checked_nor.png) no-repeat center;
+}
+/* 选中状态且悬浮 */
+QCheckBox::indicator:checked:hover#WifiListItem_CheckBox {
+    background: url(:/Image/Wifi/checkbox_checked_hov.png) no-repeat center;
+}
+/* 选中状态且按下 */
+QCheckBox::indicator:checked:pressed#WifiListItem_CheckBox {
+    background: url(:/Image/Wifi/checkbox_checked_pre.png) no-repeat center;
+}
+/* Wifi按钮 */
+QPushButton#WifiListItem_BtnWifi {
+    background: #a68557;
+    color: white;
+    font-size: 14px;
+    padding: 0px;
+    border: none;
+}
+QPushButton:hover#WifiListItem_BtnWifi {
+    background: #bf9356;
+    border: 2px solid #d8be99;
+}
+QPushButton:pressed#WifiListItem_BtnWifi {
+    background: #cfae80;
+    border: none;
+}
+QPushButton:disabled#WifiListItem_BtnWifi {
+    background: #a78659;
+    border: none;
+}
+QLabel#WifiListItem_EditTip {
+    color: white;
+    font-size: 14px;
+}
+QLabel#WifiListItem_LabErrorTip {
+    color: #ffff00;
+    font-size: 14px;
+}
+/* 属性按钮 */
+QPushButton#WifiListItem_BtnLProperty {
+    background: transparent;
+    color: #dfc9ab;
+    font-size: 14px;
+    padding: 0px;
+    border: none;
+    border-bottom: 1px solid #dfc9ab;
+}
+QPushButton:hover#WifiListItem_BtnLProperty {
+    color: white;
+    border-bottom: 1px solid white;
+}
+QPushButton:pressed#WifiListItem_BtnLProperty {
+    color: #efe4d5;
+    border-bottom: 1px solid #efe4d5;
+}
+
+/************ 密码编辑框 ************/
+QPushButton#CustomEditPasswd_BtnEye {
+    border-image: url(:/Image/Control/btn_eye_nor.png);
+    border: none;
+    padding: 0px;
+}
+QPushButton:hover#CustomEditPasswd_BtnEye {
+    border-image: url(:/Image/Control/btn_eye_hov.png);
+}
+QPushButton:pressed#CustomEditPasswd_BtnEye {
+    border-image: url(:/Image/Control/btn_eye_pre.png);
+}

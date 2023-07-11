@@ -18,6 +18,16 @@
 
 
 
+## WifiList
+
+这里使用 Qt 模仿实现了 Win10 系统下的 Wifi 列表，主要用的是 QlistWidget + xml + cmd命令行 实现。
+
+- 介绍博客：[【Qt 应用】模仿实现Win10的Wifi列表](https://www.cnblogs.com/linuxAndMcu/p/17543268.html)
+
+![QtApp_wifiList.gif](https://s2.loli.net/2023/07/11/qetIzobcuwRAyd8.gif)
+
+
+
 ## DrawExample
 
 绘图画板示例
