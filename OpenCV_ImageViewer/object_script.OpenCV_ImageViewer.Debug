@@ -1,0 +1,10 @@
+debug/BasicColorItem.o
+debug/CaptureWidget.o
+debug/ImageWidget.o
+debug/Widget.o
+debug/main.o
+debug/qrc_Resource.o
+debug/moc_BasicColorItem.o
+debug/moc_CaptureWidget.o
+debug/moc_ImageWidget.o
+debug/moc_Widget.o

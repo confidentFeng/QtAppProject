@@ -37,7 +37,7 @@ private slots:
 private:
     Ui::Widget *ui;
 
-    Serial *m_serial; // 自定义串口类对象指针
+    CustomSerial *m_serial; // 自定义串口类对象指针
 };
 
 #endif // WIDGET_H

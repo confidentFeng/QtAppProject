@@ -1,0 +1,189 @@
+﻿/*************************** 全局 ***************************/
+*{
+    outline: 0px;
+}
+/* 所有弹框样式一致 */
+QWidget#CommonWidget {
+    background: rgba(20,45,86,0.5);
+    border: 2px solid rgba(34,77,155,0.5);
+}
+/* 通用的透明窗口 */
+QWidget#CommonTranWidget {
+    background: transparent;
+}
+/* 所有编辑框样式一致 */
+QLineEdit#Common_LineEidt {
+    background: rgba(0,147,221,0.3);
+    color: #F5F5F5;
+    font-size: 13px;
+    padding-left: 2px;
+    border: none;
+}
+/* 通用的14px文本 */
+QLabel#Common_14pxText {
+    color: white;
+    font-size: 14px;
+}
+/* 通用的13px文本 */
+QLabel#Common_13pxText {
+    color: white;
+    font-size: 13px;
+}
+/* 通用的12px文本 */
+QLabel#Common_12pxText {
+    color: white;
+    font-size: 12px;
+}
+/* 通用的20px文本 */
+QLabel#Common_20pxText {
+    color: white;
+    font-size: 20px;
+}
+/* 通用的14px红色文本 */
+QLabel#Common_14pxTextRed {
+    color: #DE3729;
+    font-size: 14px;
+}
+/* 通用的13px红色文本 */
+QLabel#Common_13pxTextRed {
+    color: #DE3729;
+    font-size: 13px;
+}
+/* 通用的14px黑色文本 */
+QLabel#Common_14pxTextBlack {
+    color: black;
+    font-size: 14px;
+}
+/* 通用的蓝色按钮 */
+QPushButton#Common_BtnBlue {
+    background: #0093DD;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px;
+}
+QPushButton:hover#Common_BtnBlue {
+    background: #00A0E9;
+}
+QPushButton:pressed#Common_BtnBlue {
+    background: #0088CA;
+}
+QPushButton:disabled#Common_BtnBlue {
+    background: #999999;
+}
+/* 通用的红色按钮 */
+QPushButton#Common_BtnRed {
+    background: #FF3C33;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px;
+}
+QPushButton:hover#Common_BtnRed {
+    background: #FF5E4D;
+}
+QPushButton:pressed#Common_BtnRed {
+    background: #E62222;
+}
+/* 通用的白色按钮 */
+QPushButton#Common_BtnWhite {
+    background: #fff;
+    color: #666666;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0px;
+}
+QPushButton:hover#Common_BtnWhite {
+    background: #F6F6F6;
+}
+/* 通用的蓝色按钮_12px */
+QPushButton#Common_BtnBlue_12px {
+    background: #0093DD;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 0px;
+}
+QPushButton:hover#Common_BtnBlue_12px {
+    background: #00A0E9;
+}
+QPushButton:pressed#Common_BtnBlue_12px {
+    background: #0088CA;
+}
+QPushButton:disabled#Common_BtnBlue_12px {
+    background: #999999;
+}
+/* 通用的蓝色按钮_14px */
+QPushButton#Common_BtnBlue_14px {
+    background: #0093DD;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0px;
+}
+QPushButton:hover#Common_BtnBlue_14px {
+    background: #00A0E9;
+}
+QPushButton:pressed#Common_BtnBlue_14px {
+    background: #0088CA;
+}
+QPushButton:disabled#Common_BtnBlue_14px {
+    background: #999999;
+}
+QPushButton:checked#Common_BtnBlue_14px {
+    background: #006698;
+}
+
+QLabel#LabImage {
+    border: 1px solid gray;
+}
+
+QGroupBox {
+    color: black;
+    border: 1px solid #DCDFE6;
+    border-radius: 6px; font-size: 13px;
+    margin-top: 7px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0px 5px 3px;
+}
+
+/* 水平滑动条整体 */
+QSlider::groove:horizontal {
+    border: 0px solid #bbb;
+    height: 28px; /* 先定滑动条完整高度为28px，这个值最先设置，后面的值都由这个值来定 */
+}
+/* 滑动过的槽 */
+QSlider::sub-page:horizontal {
+    background: rgb(90,49,255); /* 槽颜色 */
+    border-radius: 4px; /* 外环区域倒圆角度（槽实际高度8px的一半） */
+    margin-top: 10px; /* 上遮住区域高度，如果想设置槽实际高度为8px，则margin-top = (height - sub-page-height)/2 = (28 - 8)/2 = 10px*/
+    margin-bottom: 10px; /* 下遮住区域高度 */
+    /* width在这里无效，不写即可 */
+}
+/* 未滑动过的槽 */
+QSlider::add-page:horizontal {
+    background: rgb(255,255,255); /* 槽颜色 */
+    border: 0px solid #777; /* 外环大小0px就是不显示，默认也是0 */
+    border-radius: 4px; /* 外环区域倒圆角度 */
+    margin-top: 10px; /* 上遮住区域高度 */
+    margin-bottom: 10px; /* 下遮住区域高度 */
+}
+/* 滑块 */
+QSlider::handle:horizontal {
+    background: rgb(193,204,208); /* 滑块颜色 */
+    width: 20px; /* 滑块的宽度，只要保证 width + margin-top + margin-bottom = height即可 */
+    border-radius: 10px; /* 滑块外环倒圆角度，滑块的一半宽度 */
+    margin-top: 4px; /* 上遮住区域高度 */
+    margin-bottom: 4px; /* 下遮住区域高度 */
+}
+/* 鼠标触及滑块 */
+QSlider::handle:horizontal:hover {
+    background: rgb(193,204,208); /* 滑块颜色 */
+    width: 22px; /* 滑块的宽度 */
+    border-radius: 11px; /* 滑块外环倒圆角度 */
+    margin-top: 3px; /* 上遮住区域高度 */
+    margin-bottom: 3px; /* 下遮住区域高度 */
+}

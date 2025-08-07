@@ -17,12 +17,12 @@
 #include <QMessageBox>
 #include <QDebug>
 
-class Serial:public QObject // 要继承QObject，才能使用 connect() 函数
+class CustomSerial:public QObject // 要继承QObject，才能使用 connect() 函数
 {
     Q_OBJECT
 
 public:
-    Serial();
+    CustomSerial();
     QStringList scanSerial(); // 扫描可用串口
     bool open(QString serialName, int baudRate); // 打开串口
     void close(); // 关闭串口

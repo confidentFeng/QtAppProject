@@ -8,7 +8,7 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
 
     // 初始化串口
-    m_serial = new Serial;
+    m_serial = new CustomSerial;
     // 寻找可用串口
     QStringList serialStrList;
     serialStrList = m_serial->scanSerial();

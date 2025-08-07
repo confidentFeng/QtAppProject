@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Blog_Cursor_A.png</file>
+    </qresource>
+</RCC>

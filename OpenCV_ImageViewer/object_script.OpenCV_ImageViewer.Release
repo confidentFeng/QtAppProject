@@ -1,0 +1,10 @@
+release/BasicColorItem.o
+release/CaptureWidget.o
+release/ImageWidget.o
+release/Widget.o
+release/main.o
+release/qrc_Resource.o
+release/moc_BasicColorItem.o
+release/moc_CaptureWidget.o
+release/moc_ImageWidget.o
+release/moc_Widget.o

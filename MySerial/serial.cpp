@@ -1,13 +1,13 @@
 #include "serial.h"
 
-Serial::Serial()
+CustomSerial::CustomSerial()
 {
     // 初始化串口
     m_serialPort = new QSerialPort;
 }
 
 // 扫描可用串口
-QStringList Serial::scanSerial()
+QStringList CustomSerial::scanSerial()
 {
     QStringList serialStrList;
 
@@ -27,7 +27,7 @@ QStringList Serial::scanSerial()
 }
 
 // 打开串口
-bool Serial::open(QString serialName, int baudRate)
+bool CustomSerial::open(QString serialName, int baudRate)
 {
     // 设置串口名
     m_serialPort->setPortName(serialName);
@@ -52,40 +52,40 @@ bool Serial::open(QString serialName, int baudRate)
 }
 
 // 关闭串口
-void Serial::close()
+void CustomSerial::close()
 {
     m_serialPort->clear();
     m_serialPort->close();
 }
 
 // 发送数据给下位机
-void Serial::sendData(QByteArray &sendData)
+void CustomSerial::sendData(QByteArray &sendData)
 {
     // 发送数据帧
     m_serialPort->write(sendData);
 }
 
 // 读取下位机发来数据
-void Serial::readData()
+void CustomSerial::readData()
 {
     // 将下位机发来数据存储在数据缓冲区
     m_readBuf = m_serialPort->readAll();
 }
 
 // 获得读取数据缓冲区
-QByteArray Serial::getReadBuf()
+QByteArray CustomSerial::getReadBuf()
 {
     return m_readBuf;
 }
 
 // 清除读取数据缓冲区
-void Serial::clearReadBuf()
+void CustomSerial::clearReadBuf()
 {
     m_readBuf.clear();
 }
 
 // 将16进制字符串转换为对应的字节序列
-QByteArray Serial::hexStringToByteArray(QString HexString)
+QByteArray CustomSerial::hexStringToByteArray(QString HexString)
 {
     bool ok;
     QByteArray ret;
