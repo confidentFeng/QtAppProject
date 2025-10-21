@@ -1,0 +1,391 @@
+/*************************** 全局 ***************************/
+*{
+    outline: 0px;
+}
+/* 全局tooltip样式，由于ARM下显示异常 */
+QToolTip{
+    border: 1px solid #1d6ea4;
+    background-color: #1d6ea4;
+    color: white;
+    font-size: 12px;
+}
+
+/************ 自定义定时隐藏提示标签 ************/
+QLabel#CustomLabTip {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*************************** 自定义标签界面 ***************************/
+QLabel#CustomBtnWidget_LabOmit {
+    background: #fd839a;
+    color: white;
+    font-size: 14px;
+    padding: 4px;
+}
+
+/*************************** 自定义编辑框控件 ***************************/
+QPushButton#MyLineEdit_BtnClear {
+    background:transparent;
+    border:none;
+}
+
+/*************************** 自定义密码编辑框界面 ***************************/
+QPushButton#CustomEditPasswd_BtnEye {
+    border-image: url(:/Image/Control/btn_eye_nor.png);
+    border: none;
+    padding: 0px;
+}
+QPushButton:hover#CustomEditPasswd_BtnEye {
+    border-image: url(:/Image/Control/btn_eye_hov.png);
+}
+QPushButton:pressed#CustomEditPasswd_BtnEye {
+    border-image: url(:/Image/Control/btn_eye_pre.png);
+}
+
+/*************************** 自定义按钮界面 ***************************/
+/*** 成员按钮 ***/
+QPushButton#CustomBtnWidget_BtnMember {
+    color: #FFFFFF;
+    font-size: 12px;
+    border: none;
+    background: url(:/Image/Control/btn_participant_nor.png) top center no-repeat;
+    padding-top: 28px;
+}
+QPushButton:hover#CustomBtnWidget_BtnMember {
+    color: #8CD1FF;
+    background: url(:/Image/Control/btn_participant_hov.png) top center no-repeat;
+}
+QPushButton:pressed#CustomBtnWidget_BtnMember {
+    color: #17B4FF;
+    background: url(:/Image/Control/btn_participant_pre.png) top center no-repeat;
+}
+QPushButton:checked#CustomBtnWidget_BtnMember {
+    color: #FFFFFF;
+    background: #398dbb url(:/Image/Control/btn_participant_nor.png) top center no-repeat;
+}
+/*** 聊天按钮 ***/
+QPushButton#CustomBtnWidget_BtnChat {
+    color: #FFFFFF;
+    font-size: 12px;
+    border: none;
+    background: url(:/Image/Control/btn_chat_nor.png) top center no-repeat;
+    padding-top: 28px;
+}
+QPushButton:hover#CustomBtnWidget_BtnChat {
+    color: #8CD1FF;
+    background: url(:/Image/Control/btn_chat_hov.png) top center no-repeat;
+}
+QPushButton:pressed#CustomBtnWidget_BtnChat {
+    color: #17B4FF;
+    background: url(:/Image/Control/btn_chat_pre.png) top center no-repeat;
+}
+QPushButton:checked#CustomBtnWidget_BtnChat {
+    color: #FFFFFF;
+    background: #398dbb url(:/Image/Control/btn_chat_nor.png) top center no-repeat;
+}
+/*** 摄像头按钮 ***/
+QPushButton#CustomBtnWidget_BtnCamera {
+    color: #FFFFFF;
+    font-size: 12px;
+    border: none;
+    background: url(:/Image/Control/btn_cameraDis_nor.png) top center no-repeat;
+    padding-top: 28px;
+}
+QPushButton:hover#CustomBtnWidget_BtnCamera {
+    color: #F04D4D;
+    background: url(:/Image/Control/btn_cameraDis_hov.png) top center no-repeat;
+}
+QPushButton:pressed#CustomBtnWidget_BtnCamera {
+    color: #C4221A;
+    background: url(:/Image/Control/btn_cameraDis_pre.png) top center no-repeat;
+}
+QPushButton:checked#CustomBtnWidget_BtnCamera {
+    color: #FFFFFF;
+    background: url(:/Image/Control/btn_camera_nor.png) top center no-repeat;
+}
+QPushButton:checked:hover#CustomBtnWidget_BtnCamera {
+    color: #8CD1FF;
+    background: url(:/Image/Control/btn_camera_hov.png) top center no-repeat;
+}
+QPushButton:checked:pressed#CustomBtnWidget_BtnCamera {
+    color: #17B4FF;
+    background: url(:/Image/Control/btn_camera_pre.png) top center no-repeat;
+}
+QPushButton:disabled:pressed#CustomBtnWidget_BtnCamera {
+    color: gray;
+    background: url(:/Image/Control/btn_camera_dis.png) top center no-repeat;
+}
+/*** 麦克风按钮 ***/
+QPushButton#CustomBtnWidget_BtnMike {
+    color: #FFFFFF;
+    font-size: 12px;
+    border: none;
+    background: url(:/Image/Control/btn_microphoneDis_nor.png) top center no-repeat;
+    padding-top: 28px;
+}
+QPushButton:hover#CustomBtnWidget_BtnMike {
+    color: #F04D4D;
+    background: url(:/Image/Control/btn_microphoneDis_hov.png) top center no-repeat;
+}
+QPushButton:pressed#CustomBtnWidget_BtnMike {
+    color: #C4221A;
+    background: url(:/Image/Control/btn_microphoneDis_pre.png) top center no-repeat;
+}
+QPushButton:checked#CustomBtnWidget_BtnMike {
+    color: #FFFFFF;
+    background: url(:/Image/Control/btn_microphone_nor.png) top center no-repeat;
+}
+QPushButton:checked:hover#CustomBtnWidget_BtnMike {
+    color: #8CD1FF;
+    background: url(:/Image/Control/btn_microphone_hov.png) top center no-repeat;
+}
+QPushButton:checked:pressed#CustomBtnWidget_BtnMike {
+    color: #17B4FF;
+    background: url(:/Image/Control/btn_microphone_pre.png) top center no-repeat;
+}
+QPushButton:disabled:pressed#CustomBtnWidget_BtnMike {
+    color: gray;
+    background: url(:/Image/Control/btn_microphone_dis.png) top center no-repeat;
+}
+QWidget#CustomBtnWidget_WidgetBtn {
+    background: rgba(3,110,167,1.0);
+    border-radius: 8px;
+}
+QPushButton#CustomBtnWidget_BtnIcon {
+    background: rgba(20,45,86,0.5);
+    color: white;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 0px;
+}
+QPushButton:hover#CustomBtnWidget_BtnIcon {
+    color: rgba(0,147,221,0.8);
+}
+QPushButton:checked#CustomBtnWidget_BtnIcon {
+    background: rgba(0,147,221,0.8);
+    color: white;
+}
+
+/*************************** 自定义编辑框界面 ***************************/
+QLineEdit#CustomEidtWidget_Edit {
+    border:none;
+    background: #A0A0A0;
+    color: white;
+    font-size: 14px;
+    padding-left: 2px;
+    border-radius: 5px;
+}
+
+/*************************** QListView界面 ***************************/
+QListView {
+    outline: none;
+}
+QListView#MainWidget_ListView::item {
+    height: 150px;
+    background-color: #393d49;
+    color: #ffffff;
+    border: transparent;
+    font-size: 18px;
+    horizontal-align: center;
+}
+QListView#MainWidget_ListView::item:hover {
+    background-color: #4e5465;
+}
+QListView#MainWidget_ListView::item:selected {
+    border-left: 5px solid #009688;
+}
+
+/************ 自定义按钮界面 ************/
+QWidget#CustomBtnWidget {
+    background-color: #f8f8f8;
+    border-radius: 16px;
+}
+QWidget#CustomBtnWidget_WidgetBack {
+    background-color: transparent;
+    border-radius: 16px;
+}
+QScrollArea#CustomBtnWidget_ScrollArea {
+    background-color: transparent;
+    border-radius: 16px;
+}
+/*** QGroupBox样式 ***/
+QGroupBox {
+    color: black;
+    border: 1px solid #DCDFE6;
+    border-radius: 6px; font-size: 13px;
+    margin-top: 7px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0px 5px 3px;
+}
+QLabel#ControlWidget_LabText {
+    color: rgb(253, 131, 154);
+    font-size: 14px;
+}
+QPushButton#ControlWidget_BtnIcon {
+    background: transparent;
+    color: rgba(0,147,221,0.8);
+    font-size: 12px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+QPushButton:hover#ControlWidget_BtnIcon {
+    color: white;
+}
+QPushButton:checked#ControlWidget_BtnIcon {
+    color: white;
+    background: white;
+}
+
+/*************************** 自定义勾选框界面 ***************************/
+/* 勾选框 */
+QCheckBox#CustomCheckWidget_CheckBox1 {
+    border: none;
+}
+QCheckBox::indicator#CustomCheckWidget_CheckBox1 {
+    width: 24px;
+    height: 24px;
+}
+/* 未选中状态的勾选框 */
+QCheckBox::indicator:enabled:unchecked#CustomCheckWidget_CheckBox1 {
+    background:url(:/Image/Control/checkBox_unchecked.png) no-repeat center;
+}
+/* 选中状态的选择框 */
+QCheckBox::indicator:enabled:checked#CustomCheckWidget_CheckBox1 {
+    background:url(:/Image/Control/checkBox_checked.png) no-repeat center;
+}
+/* 勾选框 */
+QCheckBox#CustomCheckWidget_CheckBox2 {
+    color: #0093dd;
+    border: none;
+}
+QCheckBox::indicator#CustomCheckWidget_CheckBox2 {
+    width: 24px;
+    height: 24px;
+}
+/* 未选中状态的勾选框 */
+QCheckBox::indicator:enabled:unchecked#CustomCheckWidget_CheckBox2 {
+    background: #00a0e9;
+}
+/* 选中状态的选择框 */
+QCheckBox::indicator:enabled:checked#CustomCheckWidget_CheckBox2 {
+    background: #0093dd;
+}
+
+/*************************** 自定义滑动条界面 ***************************/
+/* 水平滑动条整体 */
+QSlider::groove:horizontal {
+    border: 0px solid #bbb;
+    height: 28px; /* 先定滑动条完整高度为28px，这个值最先设置，后面的值都由这个值来定 */
+}
+/* 滑动过的槽 */
+QSlider::sub-page:horizontal {
+    background: rgb(90,49,255); /* 槽颜色 */
+    border-radius: 4px; /* 外环区域倒圆角度（槽实际高度8px的一半） */
+    margin-top: 10px; /* 上遮住区域高度，如果想设置槽实际高度为8px，则margin-top = (height - sub-page-height)/2 = (28 - 8)/2 = 10px*/
+    margin-bottom: 10px; /* 下遮住区域高度 */
+    /* width在这里无效，不写即可 */
+}
+/* 未滑动过的槽 */
+QSlider::add-page:horizontal {
+    background: rgb(255,255,255); /* 槽颜色 */
+    border: 0px solid #777; /* 外环大小0px就是不显示，默认也是0 */
+    border-radius: 4px; /* 外环区域倒圆角度 */
+    margin-top: 10px; /* 上遮住区域高度 */
+    margin-bottom: 10px; /* 下遮住区域高度 */
+}
+/* 滑块 */
+QSlider::handle:horizontal {
+    background: rgb(193,204,208); /* 滑块颜色 */
+    width: 20px; /* 滑块的宽度，只要保证 width + margin-top + margin-bottom = height即可 */
+    border-radius: 10px; /* 滑块外环倒圆角度，滑块的一半宽度 */
+    margin-top: 4px; /* 上遮住区域高度 */
+    margin-bottom: 4px; /* 下遮住区域高度 */
+}
+/* 鼠标触及滑块 */
+QSlider::handle:horizontal:hover {
+    background: rgb(193,204,208); /* 滑块颜色 */
+    width: 22px; /* 滑块的宽度 */
+    border-radius: 11px; /* 滑块外环倒圆角度 */
+    margin-top: 3px; /* 上遮住区域高度 */
+    margin-bottom: 3px; /* 下遮住区域高度 */
+}
+/* 进度条 */
+QProgressBar{
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+QProgressBar::chunk
+{
+    background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 #01FAFF,stop:1 #26B4FF);
+    border-radius: 8px;
+}
+
+/*************************** 自定义滚动条界面 ***************************/
+/* 垂直滚动条整体 */
+QScrollBar:vertical {
+    background: #FFFFFF;  /* 背景色 */
+    width: 16px; /* 设置滚动条的宽度 */
+    padding-top: 0px;  /* 上预留位置（放置向上箭头）*/
+    padding-bottom: 0px;  /* 下预留位置（放置向下箭头）*/
+    padding-left: 0px;  /* 左预留位置 */
+    padding-right: 0px;  /* 右预留位置 */
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
+}
+/* 鼠标触及滚动条 */
+QScrollBar::vertical:hover{
+    background: #FFFFFF;
+}
+/* 滑块 */
+QScrollBar::handle:vertical {
+    background: #dbdbdb;  /* 滑块颜色 */
+    border-radius: 4px;  /* 边角圆润 */
+    min-height: 30px;  /* 滑块最小高度 */
+    margin-left: 0px; /* 滑块与滑轨左边的距离 */
+    margin-right: 0px; /* 滑块与滑轨右边的距离 */
+}
+/* 鼠标触及滑块 */
+QScrollBar::handle:vertical:hover{
+    background: #d0d0d0;
+}
+/* 向下箭头 */
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px; /* 隐藏 */
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+/* 向上箭头 */
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px; /* 隐藏 */
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+/* 当鼠标放到下箭头上的时候 */
+QScrollBar::add-line:vertical:hover{
+    height: 9px;
+    width: 8px;
+    /*border-image: url(:/images/downArrow.png);*/
+    subcontrol-position: bottom;
+}
+/* 当鼠标放到下箭头上的时候 */
+QScrollBar::sub-line:vertical:hover{
+    height: 9px;
+    width: 8px;
+    /*border-image: url(:/images/upArrow.png);*/
+    subcontrol-position: top;
+}
+/* 当滚动条滚动的时候，上面的部分和下面的部分 */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    border-radius: 4px;
+}
