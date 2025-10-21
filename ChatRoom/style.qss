@@ -1,0 +1,46 @@
+QTextBrowser#ChatRoom_TextBrowser {
+    /*background-color: rgb(255, 255, 255,0);*/
+    /*border-radius: 3px;*/
+    /*color: rgb(0, 0, 0);*/
+    font-size: 14px;
+}
+
+QTextEdit#ChatRoom_TextEdit {
+    font-size: 14px;
+}
+
+/* 设置垂直滚动条基本样式*/
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    background: rgba(204,204,204,0.3);
+    min-height: 20px;
+    border-radius: 3px;
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background:rgba(153,153,153,0.3);
+}
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: rgba(204,204,204,0.3);
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    width: 0px;
+    height: 0px;
+}
